@@ -19,17 +19,3 @@ deploy:
     on:
       branch: main
 
-  - provider: elasticbeanstalk
-    region: ap-south-1
-    app: "test-app"
-    env: "Testapp-env"
-
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-
-    bucket_name: "my-first-app-bucket"
-  
-    bucket_path: "docker"
-
-    on:
-      branch: testing
